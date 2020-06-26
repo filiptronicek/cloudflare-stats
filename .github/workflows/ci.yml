@@ -29,4 +29,4 @@ jobs:
     - name: Run Test
       run: npm test
       env:
-        token: ${{secret.token}}
+        token: ${{secrets.token}}
