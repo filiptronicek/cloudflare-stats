@@ -1,4 +1,5 @@
 const fetch = require("node-fetch");
+const fs = require('fs');
 
 const Auth = process.env.token || require("./creds.js");
 
