@@ -1,0 +1,11 @@
+{
+  "name": "cloudflare-stats",
+  "version": "1.0.0",
+  "description": "Dynamic stats with cloudflare",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Filip Troníček",
+  "license": "MIT"
+}
