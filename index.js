@@ -31,7 +31,7 @@ fetch(listEndpoint, fetchConfig)
     let i = 0;
     resp.result.forEach((obj) => {
       fetch(
-        `https://api.cloudflare.com/client/v4/zones/${obj.id}/analytics/dashboard`,
+        `https://api.cloudflare.com/client/v4/zones/${obj.id}/analytics/dashboard?since=-44640`,
         fetchConfig
       )
         .then((response) => response.json())
