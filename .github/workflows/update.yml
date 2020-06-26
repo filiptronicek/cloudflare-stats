@@ -15,3 +15,6 @@ jobs:
               run: node index.js
               env:
                 token: ${{secrets.token}}
+            - uses: mikeal/publish-to-github-action@master
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
