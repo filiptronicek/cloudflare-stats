@@ -11,6 +11,8 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                     node-version: 14
+            - name: Install dependencies
+              run: npm i
             - name: Update bandwith
               run: node index.js
               env:
