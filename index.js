@@ -17,7 +17,7 @@ global.bandwidths = [];
 
 function writeBand(bytesAmnt) {
   if (bytesAmnt !== 0) {
-    fs.writeFile("band.txt", bytesAmnt, function (err) {
+    fs.writeFile("band.txt", Buffer.from(bytesAmnt), function (err) {
       if (err) return console.log(err);
     });
   }
